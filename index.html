@@ -17,7 +17,8 @@
             <div class="text-bg-light ingombro">
                 <div id="intro" class="">
                     <h1 class="text-center pt-3">Simon Says</h1>
-                    <p class="text-center">Il gioco è semplice, compariranno 5 numeri casuali tra 1 e 99. <br> Rimarranno
+                    <p class="text-center">Il gioco è semplice, compariranno 5 numeri casuali tra 1 e 99. <br>
+                        Rimarranno
                         sullo schermo per 5 secondi il tuo compito sarà ricordarli. <br> Al termine dei 5 secondi ti
                         chiederò di riscrivere i numeri e vediamo quanti te ne sarai ricordati. <br> Premi start quando
                         sei pronto e buon divertimento
@@ -32,22 +33,62 @@
 
                 </div>
 
-                <div id="number" class="d-none">
-                    <p id="primo">pippo</p>
-                    <p id="secondo">pluto</p>
-                    <p id="terzo">paperino</p>
-                    <p id="quarto">ciao</p>
-                    <p id="quinto">arrivederci</p>
-
+                <div id="number" class="altezza row d-none">
+                    <div class="d-flex justify-content-around align-items-center">
+                        <p id="primo" class="display-1">pippo</p>
+                        <p id="secondo" class="display-1">pluto</p>
+                        <p id="terzo" class="display-1">paperino</p>
+                        <p id="quarto" class="display-1">ciao</p>
+                        <p id="quinto" class="display-1">arrivederci</p>
+                    </div>
                 </div>
 
                 <div id="form" class="d-none">
-                    ciao sono il form
+                    <p class="text-center pt-5 display-3">inserisci qui i numeri che sono usciti:</p>
+                    <form action="" id="risposte">
+                        <div class="row justify-content-around">
+                            <div class="col-2">
+                                <label for="primo-numero" class="risposte">prima risposta</label>
+                                <input type="number" class="risposte" id="prima-risposta">
+                            </div>
+                            <div class="col-2">
+                                <label for="primo-numero" class="risposte">prima risposta</label>
+                                <input type="number" class="risposte" id="seconda-risposta">
+                            </div>
+                            <div class="col-2">
+                                <label for="primo-numero" class="risposte">prima risposta</label>
+                                <input type="number" class="risposte" id="terza-risposta">
+                            </div>
+                            <div class="col-2">
+                                <label for="primo-numero" class="risposte">prima risposta</label>
+                                <input type="number" class="risposte" id="quarta-risposta">
+                            </div>
+                            <div class="col-2">
+                                <label for="primo-numero" class="risposte">prima risposta</label>
+                                <input type="number" class="risposte" id="quinta-risposta">
+                            </div>
+                        </div>
+                        <div class="row justify-content-center">
+                            <button class="btn btn-primary col-3 mt-4">conferma le risposte</button>
+                        </div>
 
+                    </form>
+
+                </div>
+
+                <div id="answer" class="d-none">
+                    <p id="risultati" class="text-center display-5"></p>
+                    <p class="text-center display-5">premi reset per fare un altra partita</p>
+                    <div class="row justify-content-center">
+                        <button id="restart" class="btn btn-success col-1">reset!</button>
+                    </div>
                 </div>
 
 
             </div>
+
+
+        
         </div>
     </section>
 
